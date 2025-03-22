@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*   SELETORES PERSONALIZADOS.
+            #   = id
+            .   = classs
+            :   = pseudoclasss
+            ::  = pseudoelement
+            >   = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow
+        }
+
+        /*a::after {
+            content: ' [Link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }*/
+        
+        .especial{
+            background-color: rgb(255, 140, 140);
+        }
+
+        .especial::before{
+            content:'\00269E';
+        }
+
+        .especial::after{
+            content: '\00269F';
+        }
+        /*para colocar simbolo em content
+        Pesquisar: Simbolos HTML5
+        Site: erikasarti.com
+        */
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io"> Repositorio GitHub </a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial"> Canal do Youtube </a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial"> Site do CursoemVídeo </a></li>
+    </ul>
+
+</body>
+</html>
